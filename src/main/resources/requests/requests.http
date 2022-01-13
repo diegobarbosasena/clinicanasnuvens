@@ -1,0 +1,33 @@
+GET localhost:8080/patient/index
+
+###
+GET localhost:8080/patient/9
+
+###
+POST localhost:8080/patient/save
+Content-Type: application/json
+
+{
+  "name": "diego barbosa sena",
+  "sex": "M",
+  "birthDate": "2022-01-12",
+  "phoneNumber": "11968447752",
+  "cpf": "123456789"
+}
+
+###
+
+DELETE localhost:8080/patient/delete/1
+
+###
+
+PUT localhost:8080/patient/9
+Content-Type: application/json
+
+{
+  "name": "diego barbosa",
+  "sex": "M",
+  "birthDate": "2022-01-12",
+  "phoneNumber": "11968447752",
+  "cpf": "888"
+}
